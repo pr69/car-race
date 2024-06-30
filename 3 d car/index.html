@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Car Race Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="hud">
+        <div>Player 1 Score: <span id="player1Score">0</span></div>
+        <div>Player 2 Score: <span id="player2Score">0</span></div>
+        <div>Time Left: <span id="timeLeft">3:00</span></div>
+    </div>
+    <div id="startScreen">
+        <h1>3D Car Race Game</h1>
+        <button id="startButton">Start Game</button>
+    </div>
+    <div id="gameOverScreen" class="hidden">
+        <h2>Game Over!</h2>
+        <p id="winnerText"></p>
+        <button id="restartButton">Play Again</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
